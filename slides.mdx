@@ -1,0 +1,184 @@
+export { default as theme } from './src'
+import { Appear, Head, Image, Notes } from 'mdx-deck'
+import { Layout, Split, BGImage } from './src'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
+import nightOwl from 'prism-react-renderer/themes/nightOwl'
+
+
+export default Layout
+
+<Head>
+  <title>Hablemos de Front end: VueJS y Margarita</title>
+</Head>
+
+### Vue.js & Margarita
+
+#### Hablemos de Front end
+
+---
+
+export default Layout
+
+## Qué es Vue.js
+
+### &nbsp;
+### Framework progresivo
+### Simple MVVM Pattern
+### Alto rendimiento
+### HTML vitaminado
+
+---
+
+### Demo
+<a href="https://jsfiddle.net/ymw35hz6/">Hello world</a>
+
+---
+
+export default Layout
+
+# Static code analysis
+
+## ESLint
+
+---
+
+export default Layout
+
+<Image src="./assets/demo-eslint.gif" size="70%"/>
+
+---
+
+export default Layout
+
+# StoryBook
+
+```bash
+npm install vue-cli-plugin-storybook
+            @storybook/addon-actions
+            @storybook/addon-knobs
+            @storybook/addon-viewport
+```
+
+---
+
+export default Layout
+
+# Unit testing
+## Jest
+
+---
+
+export default Layout
+
+```jsx
+import CheckboxInput from 'margarita'
+
+it('should link input and label elements by custom id', () => {
+  const wrapper = shallowMount(CheckboxInput, {
+    propsData: { id: 'test_checkbox' }
+  })
+
+  expect(wrapper.find('label').attributes().for).toBe('test_checkbox')
+  expect(wrapper.find('input').attributes().id).toBe('test_checkbox')
+})
+```
+
+---
+
+export default Layout
+
+```jsx
+import { CIF, NIE, NIF } from 'utils/validate-document-id'
+import { createFromNumber } from '_models/DocumentId'
+
+const value = '57347217Y'
+
+it('Should return a document id with the correct document type', () => {
+  const documentId = createFromNumber(value)
+  expect(documentId.type).toBe(NIF)
+})
+```
+
+---
+
+export default Layout
+
+```jsx
+it('should set a postcode error if postcode is not valid', async () => {
+  const postcode = '1234'
+
+  await store.actions.loadMunicipalities({ commit }, postcode)
+
+  expect(commit)
+    .toHaveBeenCalledWith('SET_POSTCODE_ERROR', 'postcode-error')
+})
+```
+
+---
+
+export default Layout
+
+# Salimos a producción
+
+---
+
+export default Layout
+
+<Image src="./assets/bicycle.gif" size="65%"/>
+
+---
+
+export default Layout
+
+# e2e test 
+
+## Cypress + Cucumber.js
+
+---
+
+export default Layout
+
+## Nuevas releases Margarita
+
+---
+
+export default Layout
+
+<Image src="./assets/f1.gif" size="80%"/>
+
+---
+
+export default Layout
+
+# Integration testing
+## Jest
+
+---
+
+export default Layout
+
+<Image src="./assets/truck.gif" size="80%"/>
+
+---
+
+export default Layout
+
+## Conclusions
+
+### Code linting is also testing
+### Unit tests: isolation
+### Integration tests: Component tree
+### E2E tests: Use cases
+
+---
+
+export default Layout
+
+## Last but not least  💡
+
+---
+
+# We are hiring 🎉
+
+## @CondeBiel
+## @HolaluzEng
