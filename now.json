@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "vuejsbcn-meetup-jest-cypress-cucumber",
+  "name": "holaluz-intro-vue",
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
   "routes": [
     { "src": "^/assets/(.*)", "dest": "/assets/$1" },
