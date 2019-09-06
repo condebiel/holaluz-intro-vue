@@ -19,166 +19,144 @@ export default Layout
 
 export default Layout
 
-## Qué es Vue.js
-
-### &nbsp;
-### Framework progresivo
-### Simple MVVM Pattern
-### Alto rendimiento
-### HTML vitaminado
+<Image src="./assets/pantalla_azul.jpg" size="45%"/>
 
 ---
 
-### Demo
+export default Layout
+
+## Qué es Vue.js
+
+##### Framework progresivo
+##### Simple MVVM Pattern
+##### Orientado a componentes
+##### Alto rendimiento
+##### HTML vitaminado
+
+---
+export default Layout
+
+## Demo time! 🎉
 <a href="https://jsfiddle.net/ymw35hz6/">Hello world</a>
 
 ---
 
 export default Layout
 
-# Static code analysis
-
-## ESLint
+<Image src="./assets/components.png" size="70%" />
 
 ---
 
 export default Layout
 
-<Image src="./assets/demo-eslint.gif" size="70%"/>
+## Nuxt.js
+
+#### Framework opinionado (middlewares, plugins)
+#### vue-router integrado (pages)
+#### SSR y Universal de serie
+#### Metas de serie (SEO)
 
 ---
 
 export default Layout
 
-# StoryBook
+## Nuxt.js
 
 ```bash
-npm install vue-cli-plugin-storybook
-            @storybook/addon-actions
-            @storybook/addon-knobs
-            @storybook/addon-viewport
+npx create-nuxt-app holaluz-demo-vue
+npm run dev
 ```
 
 ---
 
 export default Layout
 
-# Unit testing
-## Jest
+## Demo time! 🎉
 
----
-
-export default Layout
-
-```jsx
-import CheckboxInput from 'margarita'
-
-it('should link input and label elements by custom id', () => {
-  const wrapper = shallowMount(CheckboxInput, {
-    propsData: { id: 'test_checkbox' }
-  })
-
-  expect(wrapper.find('label').attributes().for).toBe('test_checkbox')
-  expect(wrapper.find('input').attributes().id).toBe('test_checkbox')
-})
+```bash
+git checkout step-1
 ```
 
 ---
 
 export default Layout
 
-```jsx
-import { CIF, NIE, NIF } from 'utils/validate-document-id'
-import { createFromNumber } from '_models/DocumentId'
+## Directivas
 
-const value = '57347217Y'
-
-it('Should return a document id with the correct document type', () => {
-  const documentId = createFromNumber(value)
-  expect(documentId.type).toBe(NIF)
-})
+```bash
+v-for
+v-if
+v-text
+v-bind:prop-name / :prop-name
+v-on:event / :event
 ```
 
 ---
 
 export default Layout
 
-```jsx
-it('should set a postcode error if postcode is not valid', async () => {
-  const postcode = '1234'
+## Component instance options
 
-  await store.actions.loadMunicipalities({ commit }, postcode)
+```bash
+name
+components
+data
+props
+computed
+methods
+watch
+```
 
-  expect(commit)
-    .toHaveBeenCalledWith('SET_POSTCODE_ERROR', 'postcode-error')
-})
+---
+
+<Image src="./assets/margarita.png" size="100%"/>
+
+---
+
+export default Layout
+
+```bash
+npm install @holaluz/margarita
 ```
 
 ---
 
 export default Layout
 
-# Salimos a producción
+## Demo time! 🎉
+
+```bash
+git checkout step-2
+```
 
 ---
 
 export default Layout
 
-<Image src="./assets/bicycle.gif" size="65%"/>
+## Vuex
+
+#### Estado global
+#### Comunicación entre componentes
 
 ---
 
 export default Layout
 
-# e2e test 
-
-## Cypress + Cucumber.js
+<Image src="./assets/vuex.png" size="60%"/>
 
 ---
 
 export default Layout
 
-## Nuevas releases Margarita
+## Demo time! 🎉
+
+```bash
+git checkout step-3
+```
 
 ---
 
-export default Layout
-
-<Image src="./assets/f1.gif" size="80%"/>
-
----
-
-export default Layout
-
-# Integration testing
-## Jest
-
----
-
-export default Layout
-
-<Image src="./assets/truck.gif" size="80%"/>
-
----
-
-export default Layout
-
-## Conclusions
-
-### Code linting is also testing
-### Unit tests: isolation
-### Integration tests: Component tree
-### E2E tests: Use cases
-
----
-
-export default Layout
-
-## Last but not least  💡
-
----
-
-# We are hiring 🎉
+# Questions? 🎉
 
 ## @CondeBiel
 ## @HolaluzEng
